@@ -10,26 +10,64 @@
 
 // const yetMoreNumbers = Array.of(1,2) // it will slower for preformance perspective
 // console.log(yetMoreNumbers)
+
 // const moreNumber= Array.from("Hello World"); // it is use to convert a string in  charactor of string ["hello"] to ["h","e","l","l","o"]
 // console.log(moreNumber);
 
-function convertArray(arr) {
+// const listItems = document.querySelectorAll("li")
+// console.log(listItems);
 
-    const copy = [];
-    console.log(copy)
+// const ArraylistItem = Array.from(listItems)
+// console.log(ArraylistItem)
 
-    arr.forEach( i => {
-         let n=(i + 1) * arr[i];
+// const hobbies = ['cooking', 'sports'];
+// const personalData = [30, 'name', { moreDetail: [] }]
+// const analyticData = [[1, 2, 3], [-5, 4, 2.11]];
 
-         copy.push(n)
-        
-        
-    });
-    console.log(copy)
+// for(const data of analyticData){
+//     for(const datapoint of data){
+//         console.log(datapoint)
+//     }
+// }
+// console.log(analyticData[1])
 
-    return copy
-}
-const arr=[1, 2, 2, 3, 1, 2]
-console.log(convertArray(arr))
+// const hobbies =['sports', 'cooking']
+// const pushed =hobbies.push('reading')// in the push we push the item in array end of the array
+// console.log(hobbies)
+// console.log(pushed)
+// const unshifted = hobbies.unshift("read")// In the unshift we add item in 0th position of array
+// console.log(hobbies)
+// console.log(unshifted);
+// hobbies.pop()//In the pop we add item in last position of array
+// console.log(hobbies)
+// const shifted = hobbies.shift()// it is use to move all element of array from the left side 1=>0 postion
+// console.log(hobbies)
+// console.log(shifted)
 
+// hobbies[1]='coding'
+//hobbies[5]='jumping' //rarely used
+// console.log(hobbies)
 
+// const removedElement= hobbies.splice(1,2,"good")// here 1 denote which index good placed and 2 denote after placeing the good in the index 1 after that delete 2 elem after this element 
+//  hobbies.splice(1)// it means all elements to be deleted after  array index 1
+// console.log(hobbies)
+// console.log(removedElement)
+
+// -------------if we want to delete last element in the array then we use -1
+// const removeItem = hobbies.splice(-1,1)
+// console.log(hobbies)
+// console.log(removeItem)
+
+const testResults =[1,5.3,1.5,10.99,-5,1.5,10]
+
+/*------- slice methos is used to copy any array like here slice is used to copy testResults array----*/
+// const storeResults = testResults.slice(-3,-1)//also slice is to select any array slice(0,1) then the out put is [1,5.3]
+const storedResults = testResults.concat(3.99,8.55);
+testResults.push(5.6)
+
+console.log(testResults,storedResults)
+// console.log(testResults.indexOf(1.5))
+console.log(testResults.lastIndexOf(1.5))
+
+const person =[{name: 'abhishek'},{name: 'mishra'}]
+console.log(person.indexOf({name: 'mishra'}))
