@@ -61,9 +61,9 @@
 const testResults =[1,5.3,1.5,10.99,-5,1.5,10]
 
 /*------- slice methos is used to copy any array like here slice is used to copy testResults array----*/
-// const storeResults = testResults.slice(-3,-1)//also slice is to select any array slice(0,1) then the out put is [1,5.3]
-// const storedResults = testResults.concat(3.99,8.55);
-// testResults.push(5.6)
+// const storeResults = testResults.slice(0,1)//also slice is to select any array slice(0,1) then the out put is [1,5.3]
+// const storedResults = testResults.concat(3.99,654,8.55);
+// // testResults.push(5.6)
 
 // console.log(testResults,storedResults)
 // console.log(testResults.indexOf(1.5))
@@ -117,4 +117,4 @@ const sortedPrices =prices.sort((a,b)=>{
         return -1
     }
 })
-console.log(sortedPrices)
+console.log(sortedPrices.reverse());
