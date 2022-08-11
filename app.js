@@ -106,15 +106,68 @@ const testResults =[1,5.3,1.5,10.99,-5,1.5,10]
 // })
 // console.log(taxAdjustPrices)
 
-/*-------------------Storting---------- --------------*/
-const prices = [ 10.99,5.99,5.99,3.99,6.59]
-const sortedPrices =prices.sort((a,b)=>{
-    if(a>b){
-        return 1
-    }else if (a==b){
-        return 0
-    }else{
-        return -1
-    }
-})
-console.log(sortedPrices.reverse());
+/*-------------------Sorting/ reverse---------- --------------*/
+// const prices = [ 10.99,5.99,5.99,3.99,6.59]
+// const sortedPrices =prices.sort((a,b)=>{
+//     if(a>b){
+//         return 1
+//     }else if (a==b){
+//         return 0
+//     }else{
+//         return -1
+//     }
+// })
+// console.log(sortedPrices.reverse());
+/*-------------------filter---------- --------------*/
+
+// const filterArray = prices.filter(price=>price > 6) //ARROW function
+// console.log(filterArray)
+
+/*-------------------Reduce---------- --------------*/
+
+// const sum = prices.reduce((prevalue,curvalue,index,prices)=>{
+//     return prevalue + curvalue
+// },0)
+// console.log(sum)
+
+/*-------------------Split---------- --------------*/
+
+// const data = 'abhishek,145.874,5855854';
+// const transfomedData =data.split(",")
+// transfomedData[1,2]=+transfomedData[1,2]
+// console.log(transfomedData)
+/*-------------------Join---------- --------------*/
+// const dataName= ['abhishek','mishra']
+// const joinedDataName = dataName.join()
+// console.log(joinedDataName)
+
+
+// const persons = [{name: 'Abhishek',age:'23'},{name: 'Abhishek mishra',age:'53'}]
+// const copperson = persons.map(person=>({name: persons.name,age:age.name}));
+// persons.push({name: 'Abhi'})
+// console.log(persons,copperson)
+
+/*-------------------Spread oprater------------------------*/
+
+// const persons =['akm','abhi','mish','moh','ams']
+// const copiedPersons = [...persons]
+// persons.push('Mr')
+// console.log(persons,copiedPersons)
+// const sum = Math.min(...prices)
+// console.log(sum)
+
+// const arrObj = [{name:'abhi',age:'24'},{name:'abhishek',age:'44'},{name:'mishra',age:'80'}]
+// const copiedarrObj =arrObj.map(person =>({
+// name:person.name,
+// age:person.age
+// }));
+// arrObj.push({name:'mohit',age:'78'})
+// arrObj[0].age='78'
+// console.log(arrObj,copiedarrObj)
+
+const data = ['Abhishek','Mishra','Mr','30']
+const [firstName,lastName,...otherinfo] = data;
+console.log(firstName,lastName,otherinfo)
+
+
+/*-------------------Spread oprater------------------------*/
