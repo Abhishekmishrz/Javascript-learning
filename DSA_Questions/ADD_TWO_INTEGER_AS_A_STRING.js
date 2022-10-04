@@ -14,14 +14,14 @@ function AddTwoString(str1,str2){
         i--
         j--
     }
-    while(i>=0){
-        // let carry =0;
-        let sum = parseInt(str1[i]) +carry
-        let reminder = sum %10
-        ans+=reminder;
-        carry = Math.floor( sum /10)
-        i-- 
-    }
+    // while(i>=0){
+    //     // let carry =0;
+    //     let sum = parseInt(str1[i]) +carry
+    //     let reminder = sum %10
+    //     ans+=reminder;
+    //     carry = Math.floor( sum /10)
+    //     i-- 
+    // }
     while(j>=0){
         // let carry =0;
         let sum = parseInt(str2[j])+ carry
@@ -36,5 +36,5 @@ function AddTwoString(str1,str2){
     return ans.split('').reverse('').join(" ");
 }
 
-const result = AddTwoString("1024","23456")
+const result = AddTwoString("1024","54232")
 console.log(result)

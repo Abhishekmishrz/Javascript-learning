@@ -165,9 +165,31 @@ const testResults =[1,5.3,1.5,10.99,-5,1.5,10]
 // arrObj[0].age='78'
 // console.log(arrObj,copiedarrObj)
 
-const data = ['Abhishek','Mishra','Mr','30']
-const [firstName,lastName,...otherinfo] = data;
-console.log(firstName,lastName,otherinfo)
+// const data = ['Abhishek','Mishra','Mr','30']
+// const [firstName,lastName,...otherinfo] = data;
+// console.log(firstName,lastName,otherinfo)
 
 
 /*-------------------Spread oprater------------------------*/
+// const A = [1,27,45,45,45,78,89,96]
+// function checkNumber(A,ele){
+//     let srt =0;
+//     let ans =-1
+//     let end =A.length-1;
+//     while(srt<=end){
+//         let mid =Math.floor((srt+end)/2)
+//         if(A[mid]==ele){
+            
+//             ans= mid;
+//             end = mid + 1;
+            
+//         } else if (ele < A[mid]){
+//             end = mid -1;
+//         }else{
+//             srt= mid +1;
+//         }
+//     }
+//     return ans;
+// }
+// console.log(checkNumber(A,45))
+
